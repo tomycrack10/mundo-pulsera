@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+body{
+    background-color:#EBEDE3 ;
+    font-family: "Alfa Slab One", serif;
+}
+.titulo h1 {
+    background-color: lightseagreen;
+    color: #EBEDE3;
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius:10px ;
+}
+.boton {
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    background-color: #f3a6c8;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #e88bb5;
+    transform: scale(1.03);
+}
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.sobreNoso tros{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding: 40px;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: #EBEDE3;
+}
+footer{
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.banner {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.enlaces{
+    display: flex;
+    list-style: none;
+    width: 450px;
+    justify-content: space-between;
+}
+.sobreNosotros {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding: 40px;
+}
+.contenedor-tarjetas{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #EBEDE3;
+
+}
+
+.perritos h2 {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.tarjeta {
+    width: 220px;
+    padding: 0;
+    border-radius: 15px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.15);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.25);
+}
+
+.tarjeta h3 {
+    color: #4297B3;
+    font-size: 19px;
+    margin: 15px 10px 10px;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.tarjeta-datos {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: white;
+}
+
+.tarjeta-datos p {
+    font-family: Arial, sans-serif;
+    color: #555;
+    min-height: 40px;
+}
+
+.boton-carrito {
+    position: fixed;
+    right: 25px;
+    top: 120px;
+    width: 55px;
+    height: 55px;
+    background-color: #f3a6c8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+#cantidad-carrito {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #4297B3;
+    color: white;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrito {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 350px;
+    height: 100vh;
+    background-color: white;
+    padding: 25px;
+    box-shadow: -5px 0 20px rgba(0,0,0,0.2);
+    z-index: 2000;
+    transition: right 0.3s ease;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.carrito.abierto {
+    right: 0;
+}
+
+.carrito-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carrito-header h2 {
+    color: #4297B3;
+    margin-top: 0;
+}
+
+#cerrar-carrito {
+    border: none;
+    background: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#lista-carrito {
+    margin: 20px 0;
+}
+
+#lista-carrito p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 8px 0;
+    background-color: #EBEDE3;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+
+#lista-carrito p button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.carrito-total {
+    text-align: right;
+    font-size: 20px;
+    color: #4297B3;
+    margin: 20px 0;
+}
+
+#vaciar-carrito,
+#finalizar-compra {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#vaciar-carrito {
+    background-color: #ddd;
+    color: #555;
+}
+
+#finalizar-compra {
+    background-color: #25D366;
+    color: white;
+}
