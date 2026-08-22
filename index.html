@@ -12,18 +12,19 @@
     <h1>Mundo Pulsera📿</h1>
         <nav>
         <ul class="enlaces">
-            <li><a class="link"href="">inicio</a></li>
-            <li><a class="link"href="">adoptar</a></li>
-            <li><a class="link"href="">nosotros</a></li>
-            <li><a class="link"href="">como ayudar</a></li>
-            <li><a class="link"href="">contacto</a></li>
-        </ul>
+    <li><a class="link" href="#inicio">Inicio</a></li>
+    <li><a class="link" href="#productos">Productos</a></li>
+    <li><a class="link" href="#nosotros">Nosotros</a></li>
+    <li><a class="link" href="#contacto">Contacto</a></li>
+</ul>
     </nav>
     </header>
-    <main><div class="boton-carrito" id="abrir-carrito">
+    <main id="inicio"><div class="boton-carrito" id="abrir-carrito">
     🛒
     <span id="cantidad-carrito">0</span>
 </div>
+<div id="aviso-carrito"></div>
+<div class="fondo-carrito" id="fondo-carrito"></div>
 
 <div class="carrito" id="carrito">
     <div class="carrito-header">
@@ -46,96 +47,135 @@
 </div>
 
         <img class="banner" src="imagenes/banner.pulsera.png" alt="banner de pulseras"width="1200">
-        <section class="perritos contenedor-tarjetas">
+        <section id="productos" class="perritos contenedor-tarjetas">
             <h2>Conoce nuestros productos</h2>
             <div class="tarjeta">
-                <h3>Collar clasico</h3>
-                <img src="./imagenes/collar.jpeg" alt="imagen de collar"width="200">
-                <div class="tarjeta-datos">
-                <p>                        
-                    Collar comodo y hecho a mano
-                </p>
-                <button class="boton" data-producto="Collar clásico" data-precio="2000">
-    Comprar $2000
-</button>
-                </div>
-                </div>
+    <h3>Collar clásico</h3>
+
+    <img src="./imagenes/collar.jpeg" alt="Collar clásico">
+
+    <div class="tarjeta-datos">
+        <p>Collar cómodo y hecho a mano</p>
+
+        <strong class="precio">$2000</strong>
+
+        <button class="boton" data-producto="Collar clásico" data-precio="2000">
+            🛒 Comprar
+        </button>
+    </div>
+</div>
                 <div class="tarjeta">
-                <h3>Pulsera Personalizada</h3>
-                <img src="./imagenes/pulsera.jpeg" alt="banner de la web"width="200">
-                <div class="tarjeta-datos">
-                <p>Personalizala a tu gusto</p>
-                <button class="boton" data-producto="Pulsera Personalizada" data-precio="2000">
-    Comprar $2000
-</button>
-                </div>
-                </div>
+    <h3>Pulsera personalizada</h3>
+
+    <img src="./imagenes/pulsera.jpeg" alt="Pulsera personalizada">
+
+    <div class="tarjeta-datos">
+        <p>Personalizala a tu gusto</p>
+
+        <strong class="precio">$2000</strong>
+
+        <button class="boton" data-producto="Pulsera personalizada" data-precio="2000">
+            🛒 Comprar
+        </button>
+    </div>
+</div>
                 <div class="tarjeta">
     <h3>Sujeta anteojos</h3>
-    <img src="./imagenes/sujetaanteojos.jpeg" alt="banner de la web" width="200">
+
+    <img src="./imagenes/sujetaanteojos.jpeg" alt="Sujeta anteojos">
+
     <div class="tarjeta-datos">
-        <p>Practico , para llevar tus anteojos</p>
+        <p>Práctico para llevar tus anteojos</p>
+
+        <strong class="precio">$3000</strong>
+
         <button class="boton" data-producto="Sujeta anteojos" data-precio="3000">
-    Comprar $3000
-</button>
-</div>
+            🛒 Comprar
+        </button>
+    </div>
 </div>
 
 
 <div class="tarjeta">
     <h3>Colgante para celular</h3>
-    <img src="./imagenes/colgantep.jpeg" alt="Colgante para celular" width="200">
+
+    <img src="./imagenes/colgantep.jpeg" alt="Colgante para celular">
+
     <div class="tarjeta-datos">
-        <p>Colgante para comodidad con el celular</p>
+        <p>Colgante para llevar tu celular cómodamente</p>
+
+        <strong class="precio">$2000</strong>
+
         <button class="boton" data-producto="Colgante para celular" data-precio="2000">
-    Comprar $2000
-</button>
+            🛒 Comprar
+        </button>
     </div>
 </div>
 
 <div class="tarjeta">
-    <h3>Pulsera clasica</h3>
-    <img src="./imagenes/pulserahola.jpeg" alt="banner de la web" width="200">
+    <h3>Pulsera clásica</h3>
+
+    <img src="./imagenes/pulserahola.jpeg" alt="Pulsera clásica">
+
     <div class="tarjeta-datos">
-        <p>Pulsera comoda y ajustable</p>
-        <button class="boton" data-producto="Pulsera clasica" data-precio="1000">
-    Comprar $1000
-</button>
+        <p>Pulsera cómoda y ajustable</p>
+
+        <strong class="precio">$1000</strong>
+
+        <button class="boton" data-producto="Pulsera clásica" data-precio="1000">
+            🛒 Comprar
+        </button>
     </div>
 </div>
 <div class="tarjeta">
     <h3>Llavero</h3>
-    <img src="./imagenes/llavero.jpeg" alt="banner de la web" width="200">
+
+    <img src="./imagenes/llavero.jpeg" alt="Llavero">
+
     <div class="tarjeta-datos">
-        <p>Llavero practico y comodo </p>
+        <p>Llavero práctico y cómodo</p>
+
+        <strong class="precio">$1500</strong>
+
         <button class="boton" data-producto="Llavero" data-precio="1500">
-    Comprar $1500
-</button>
+            🛒 Comprar
+        </button>
     </div>
 </div>
 </section> 
-        <section class="sobreNosotros">
+        <section id="nosotros" class="sobreNosotros">
     <div>
         <h2>Sobre Mundo Pulsera</h2>
         <p>
-            ¡Hola! Somos Mundo Pulsera, un grupo de ocho chicas que creamos accesorios con mucha onda. Hacemos pulseras, collares, llaveros y colgantes para celular con nuestras propias manos para que lleves algo único todos los días, ¡Gracias por elegirnos!✨ .
+            ¡Hola! Somos Mundo Pulsera, un grupo de ocho chicas que creamos accesorios con mucha onda. Hacemos pulseras, collares, llaveros, sujeta anteojos  y colgantes para celular con nuestras propias manos para que lleves algo único todos los días,luchamos por que nuestro emprendimiento crezca y hacer feliz a la gente con algo simple, barato y hecho con mucho amor para cada persona , ¡Gracias por elegirnos!   ¡Gracias por confiar en nosotros!✨ .
         </p>
     </div>
 
 </section>
             
     </main>
-    <footer>
-    <p>Copyright © 2026 Desarrollado por Tomas Herrera
-        
-    </p>
-    <div class="redes"><a href="https://www.instagram.com/mundopulsera.8/" target="_blank">
-        <i class="fa-brands fa-instagram"></i>
-    </a>
+    <footer id="contacto">
+    <p>© 2026 Mundo Pulsera · Sitio web desarrollado por Tomas Herrera </p>
+    <div class="redes">
+
+
+
     <a href="https://whatsapp.com/channel/0029VbCNDJ3GJP8AAvzIcW2W" target="_blank">
         <i class="fa-brands fa-whatsapp"></i>
+        Canal de WhatsApp
     </a>
-    </div>
+
+        <a href="https://www.instagram.com/mundopulsera.8/" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+        Instagram
+    </a>
+
+    <a href="https://wa.me/54962930737" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+    Contacto WhatsApp
+</a>
+</a>
+</div>
     </footer>
 <script src="./js/script.js"></script>
 
