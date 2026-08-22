@@ -194,7 +194,8 @@ botonFinalizar.addEventListener("click", function() {
 
     window.open(url, "_blank");
 
-    carritoElemento.classList.remove("abierto");
+carritoElemento.classList.remove("abierto");
+document.querySelector(".fondo-carrito").classList.remove("activo");
 
 });
 mostrarCarrito();
