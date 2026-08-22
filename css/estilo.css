@@ -640,3 +640,8 @@ html {
 .tarjeta-datos .boton {
     margin-top: auto;
 }
+.logo {
+    width: 150px;
+    height: auto;
+    display: block;
+}
